@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Django blog</title>
+    </head>
+    <body>
+        <header>
+        <a href="{% url 'index' %}"> Djangoblog
+            </a>|<a href="{% url 'admin:index' %}">Admin</a>
+        </header>
+        <div>
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </body>
+</html>
+
