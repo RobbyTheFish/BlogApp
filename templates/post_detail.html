@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    {% for post in all_posts_list %}
-        <div class='row justify-content-center'>
-        <div class='col-md-4'>
-            <div class="post-entry">
+<div class="row justify-content-center">
+        <div class="post-entry" style="min-width: 400px;">
                 <div class="metainf">
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-md-8">
-                                <a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a>
+                                <div class="title">
+                                    <h2>{{post.title}}</h2>
+                                </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="author">
@@ -22,13 +22,11 @@
                 <div class="body">
                     <div class="container">
                         <div class="row">
-                            <p>{{post.body|truncatechars:255}}</p>
+                                <p>{{post.body}}</p>
                         </div>
                     </div>
                 </div>
-             </div>
         </div>
-        </div>
-    {% endfor %}
-{% endblock content %}
+</div>
 
+{% endblock content %}

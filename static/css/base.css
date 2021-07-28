@@ -1,0 +1,73 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    height: 100%;
+    min-width: 0px;
+}
+p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+nav {
+    padding: 15px;
+    margin-left: auto; margin-right: auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+nav a{
+    padding: 5px;
+    padding-top: 3px;
+    text-decoration: none;
+    color:rgb(22, 18, 53);
+    transition: 0.1s;
+    border-radius: 7px;
+}
+
+nav a:hover{
+    text-decoration: none;
+    background-color: rgb(22, 18, 53);
+    color: white;
+}
+
+.post-entry {
+    margin-bottom: 40px;
+}
+.metainf h2, .metainf a{
+    color:rgb(245, 245, 245);
+    text-decoration: none;
+    font-size: 125%;
+    margin: 0px;
+}
+.author {
+    color:rgb(245, 245, 245);
+    text-decoration: none;
+    font-size: 125%;
+}
+.author p{
+    margin: 0px;
+    text-align: right;
+}
+.metainf .row{
+    background-color: rgb(22, 18, 53);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.body {
+    background-color: rgb(235, 232, 252);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.body .container .row{
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 75%;
+}
+
+.body .container .row p{
+    margin: 0px;
+}
