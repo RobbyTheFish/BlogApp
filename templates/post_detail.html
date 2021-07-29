@@ -26,7 +26,21 @@
                         </div>
                     </div>
                 </div>
-        </div>
+                <div class="edit">
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <a href="{% url 'post_edit' post.pk %}">+ Edit Blog Post</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="delete">
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <a href="{% url 'post_delete' post.pk %}">Delete Blog Post</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 </div>
 
 {% endblock content %}
