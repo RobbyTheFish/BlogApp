@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
-    'blog_porject' #Added becuase static files didn't load
+    'blog_porject', #Added becuase static files didn't load
+    'accounts.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [
@@ -102,7 +103,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL = 'index'
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
